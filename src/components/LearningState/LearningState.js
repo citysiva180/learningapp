@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import LearningProps from "../LearningProps/LearningProps";
-
 class StateCheck extends Component {
   constructor(props) {
     super(props);
@@ -27,9 +26,6 @@ class StateCheck extends Component {
   render() {
     return (
       <div className="container">
-        <LearningProps count={this.state.count} />
-        <br />
-        <br />
         <br />
         <br />
         <br />
@@ -66,6 +62,15 @@ class StateCheck extends Component {
         >
           Decrease
         </Button>
+        <br />
+        <br />
+        <br />
+        <LearningProps count={this.state.count} />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
