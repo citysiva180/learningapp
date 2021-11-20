@@ -10,6 +10,9 @@ class RenderingTables extends Component {
   render() {
     return (
       <div className="container">
+        <br />
+        <br />
+        <br />
         <h1>Rendering a JSON Data into a Table in React</h1>
         <br />
         <br />
