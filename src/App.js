@@ -6,6 +6,7 @@ import StateCheck from "./components/LearningState/LearningState";
 import ToggleEvents from "./components/ReactEvents/RaisingEvents";
 import RenderingTables from "./components/RenderingTables/RenderingTables";
 import InputBox from "./components/InputBox/InputBox";
+import Forms from "./components/Forms/Forms";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/tables" element={<RenderingTables />}></Route>
           <Route path="/comment" element={<CommentBox />}></Route>
           <Route path="/inputbox" element={<InputBox />}></Route>
+          <Route path="/forms" element={<Forms />}></Route>
         </Routes>
       </Router>
     </div>
