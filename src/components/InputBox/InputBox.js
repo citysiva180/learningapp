@@ -6,7 +6,7 @@ function InputBox() {
   const [print, setPrint] = useState(false);
 
   function getData(val) {
-    setInput(val.target.value);
+    setInput(val.target.value); //Ensure to target elements via setInput
     setPrint(false);
   }
 
