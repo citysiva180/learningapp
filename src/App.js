@@ -7,6 +7,7 @@ import ToggleEvents from "./components/ReactEvents/RaisingEvents";
 import RenderingTables from "./components/RenderingTables/RenderingTables";
 import InputBox from "./components/InputBox/InputBox";
 import Forms from "./components/Forms/Forms";
+import Paginations from "./components/Paginations/Paginations";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/comment" element={<CommentBox />}></Route>
           <Route path="/inputbox" element={<InputBox />}></Route>
           <Route path="/forms" element={<Forms />}></Route>
+          <Route path="/pagination" element={<Paginations />}></Route>
         </Routes>
       </Router>
     </div>
