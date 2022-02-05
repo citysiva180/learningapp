@@ -20,7 +20,7 @@ function App() {
           <Route path="/comment" element={<CommentBox />}></Route>
           <Route path="/inputbox" element={<InputBox />}></Route>
           <Route path="/forms" element={<Forms />}></Route>
-          <Route path="/pagination" element={<Paginations />}></Route>
+          <Route path="/pagination/:id" element={<Paginations />}></Route>
         </Routes>
       </Router>
     </div>

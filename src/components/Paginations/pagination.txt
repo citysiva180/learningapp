@@ -1,0 +1,17 @@
+React Pagination Notes 
+
+- To paginate.. remember you would need the following elements 
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(10);
+
+    - state should know the current page 
+    - state should know how much you would like to display per page 
+
+    const indexOfLastPost = currentPage * postsPerPage; 
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); 
+  
+    so, at starting, the current page will be 1 
+    indexOfLastPost  = 1 * 10 
+    indexOfFirstPost = 10 - 
