@@ -13,5 +13,55 @@ React Pagination Notes
     const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); 
   
     so, at starting, the current page will be 1 
-    indexOfLastPost  = 1 * 10 
-    indexOfFirstPost = 10 - 
+    indexOfLastPost  = 1 * 10  = 10
+    indexOfFirstPost = 10 - 10 = 0
+    currentPosts = get an array of numbers from 0 to 10
+
+
+    pass these props to paginate function 
+
+    pass the postPerpage, 
+    totalposts which is currentPosts.length
+    paginate which fires a function call in appjs. 
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber); // What this does is, on clicking it will get the number clicked 
+    then it sends this value to the parent, where parent will assign that number in state 
+
+
+Final logic will be something like this 
+
+
+import React from "react";
+
+const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
+  return (
+    <nav className="pagination">
+      {pageNumbers.map((number) => (
+        <li key={number} className="page-item">
+          <a onClick={() => paginate(number)} href="!#" className="page-link"> // The pagination will fire the function at the top component
+            {number}
+          </a>
+        </li>
+      ))}
+    </nav>
+  );
+};
+
+export default Pagination;
+
+Finally, it will render an array of number links which on click will change.
+
+
+Notes: Now, when I tried changing the page, I started getting errors since the URL was not properly mapped. 
+Due to the changes in the react router dom 6 version, this had happened. To make this go away, you will need to 
+add parameterized route to this pagination component. Only then it will work!
+
+like this... 
+
+<Route path="/pagination/:id" element={<Paginations />}></Route>

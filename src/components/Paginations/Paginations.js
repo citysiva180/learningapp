@@ -22,12 +22,12 @@ function Paginations() {
   //Important Pagination Logic
 
   const indexOfLastPost = currentPage * postsPerPage;
-  debugger;
+  console.log(indexOfLastPost);
   // say 1st page * (10) => 10 posts
   const indexOfFirstPost = indexOfLastPost - postsPerPage; //10 - 10
-  debugger;
+  console.log(indexOfFirstPost);
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); //(1,10) Anyway this is what its suppose to print it out
-
+  console.log(currentPosts);
   //change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
