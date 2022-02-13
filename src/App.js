@@ -9,7 +9,7 @@ import InputBox from "./components/InputBox/InputBox";
 import Forms from "./components/Forms/Forms";
 import Paginations from "./components/Paginations/Paginations";
 import AddingNotifications from "./components/NotificationsWithToastify/AddingNotifications";
-
+import SearchComponents from "./components/SearchComponents/SearchComponents";
 function App() {
   return (
     <div className="container">
@@ -23,6 +23,7 @@ function App() {
           <Route path="/forms" element={<Forms />}></Route>
           <Route path="/pagination/:id" element={<Paginations />}></Route>
           <Route path="/toasts" element={<AddingNotifications />}></Route>
+          <Route path="/search" element={<SearchComponents />}></Route>
         </Routes>
       </Router>
     </div>

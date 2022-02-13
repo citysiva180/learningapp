@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  toastContainer,
-  toast,
-  Zoom,
-  Bounce,
-  ToastContainer,
-} from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { Button } from "react-bootstrap";
 
 import "react-toastify/dist/ReactToastify.css";
