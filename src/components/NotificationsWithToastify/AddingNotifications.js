@@ -7,7 +7,7 @@ import {
   ToastContainer,
 } from "react-toastify";
 import { Button } from "react-bootstrap";
-// import axios from "axios";
+
 import "react-toastify/dist/ReactToastify.css";
 
 //Checkout this amazing toastify documentation :  https://fkhadra.github.io/react-toastify/introduction/
@@ -18,15 +18,6 @@ const dangerId = "danger";
 const warningId = "warn";
 const infoId = "info";
 function AddingNotifications() {
-  //   const toastId = React.useRef(null);
-
-  //   const notify = () => {
-  //     console.log("clicked");
-  //     if (!toast.isActive(toastId.current)) {
-  //       toastId.current = toast("I cannot be duplicated!");
-  //     }
-  //   };
-
   const notify = () => {
     console.log("clicked!!");
     toast("I cannot be duplicated!", {
@@ -64,10 +55,6 @@ function AddingNotifications() {
     });
   };
 
-  //   const notify = () => {
-  //     toast.success("Very Successfull");
-  //   };
-
   return (
     <div>
       {" "}
@@ -101,48 +88,15 @@ function AddingNotifications() {
       </Button>
     </div>
   );
-  //   const successToast = () => {
-  //     // toast("Success Custom Toast!", {
-  //     //   className: "custom-toast",
-  //     //   draggable: true,
-  //     //   position: toast.POSITION.BOTTOM_CENTER,
-  //     // });
-  //     toast.success("You succeeded");
-  //   };
-
-  //   //   toast.error("Error Toast! Something went wrong!");
-  //   //   toast.info("Some Information");
-  //   //   toast.success("You succeeded");
-  //   //   toast.warn("something is not right! Check yo self b4 you wreck yo self!!");
-  //   const customId = () => parseInt(Date.now() * Math.random());
-  //   axios
-  //     .get("/lkjlkj")
-  //     .then((res) => {
-  //       console.log(res);
-  //     })
-  //     .catch((err) => {
-  //       if (err) {
-  //         toast("Api Error", {
-  //           className: "Error Toast",
-  //           draggable: true,
-  //           position: toast.POSITION.TOP_CENTER,
-  //           toastId: customId,
-  //         });
-  //       }
-  //     });
-
-  //   return (
-  //     <div>
-  //       <>
-  //         <ToastContainer draggable={false} transition={Zoom} autoClose={8000} />
-  //       </>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //       <Button onClick={() => successToast()}>Inovoke Success Toast</Button>
-  //     </div>
-  //   );
 }
 
 export default AddingNotifications;
+
+//   const toastId = React.useRef(null);
+
+//   const notify = () => {
+//     console.log("clicked");
+//     if (!toast.isActive(toastId.current)) {
+//       toastId.current = toast("I cannot be duplicated!");
+//     }
+//   };
