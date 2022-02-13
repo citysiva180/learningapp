@@ -8,6 +8,7 @@ import RenderingTables from "./components/RenderingTables/RenderingTables";
 import InputBox from "./components/InputBox/InputBox";
 import Forms from "./components/Forms/Forms";
 import Paginations from "./components/Paginations/Paginations";
+import AddingNotifications from "./components/NotificationsWithToastify/AddingNotifications";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/inputbox" element={<InputBox />}></Route>
           <Route path="/forms" element={<Forms />}></Route>
           <Route path="/pagination/:id" element={<Paginations />}></Route>
+          <Route path="/toasts" element={<AddingNotifications />}></Route>
         </Routes>
       </Router>
     </div>
